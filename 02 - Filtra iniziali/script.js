@@ -24,6 +24,28 @@ console.log(filter(names,letter));
 
 
 
+
+filter=(names,letter) => {
+    let filtered= []
+    for (let i = 0; i < names.length; i++) {
+        
+        if (letter == names[i].charAt(0)) {
+            filtered.push(names[i]) 
+            
+        }   
+        
+    }
+      
+    return filtered
+
+
+   
+    
+} 
+console.log(filter(names,letter));
+
+
+
 // Invoca la funzione qui e stampa il risultato in console
 
 
