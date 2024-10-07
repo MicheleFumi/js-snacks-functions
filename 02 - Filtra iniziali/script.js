@@ -4,10 +4,13 @@ const names = ["Anna", "Luca", "Marco", "Adele", "Laura", "Alessandra"];
 const letter = "A"
 // Dichiara la funzione qui.
 function filter() {
+    let filtered= []
     for (let i = 0; i < names.length; i++) {
-        let filtered_name=[]
         
-        filtered_name.push(letter.filter)
+        if (letter == names[i].charAt(0)) {
+            filtered.push(names[i])
+            
+        }
     }
 
    
