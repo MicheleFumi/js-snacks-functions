@@ -9,10 +9,27 @@ const name = 'Mario';
 
 
 // Dichiara la funzione qui.
+function alexa(name) {
+    let now = new Date()
+    let hour = Date.getHours
+    const morning = 13
+    const evening = 17
+    const night = 17
+    if (hour <= morning) {
+        message = `Buongiorno ${name}`;
 
+    } else if (hour <= evening) {
+        message = `Buon pomeriggio ${name}`;
+    }
+    else {
+        message = `Buona sera ${name}`;
+    }
+    return message
+}
 
 // Invoca la funzione qui e stampa il risultato in console
 
+console.log(alexa(name));
 
 
 //Risultato atteso se si passa 'Mario' alle 18: // Buonasera Mario.
